@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Renderer } from "./components/Renderer";
 
 interface State {
     name: string;
@@ -15,6 +16,10 @@ export default class App extends React.Component<{}, State> {
     }
 
     render() {
-        return <p>Balls 2</p>
+        return (
+            <div className="app-outer">
+                <Renderer />
+            </div>
+        );
     }
 }
